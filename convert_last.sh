@@ -28,7 +28,7 @@ fi
 
 # Starting to convert the video
 echo "Hi $(whoami), I'll now proceed to convert your ${LAST_VIDEO}.mkv to an mp4 video..."
-ffmpeg -hide_banner -loglevel 0 -stats -i ${LAST_VIDEO}.mkv ${LAST_VIDEO}.mp4
+ffmpeg -hide_banner -loglevel 0 -stats -i "${LAST_VIDEO}.mkv" "${LAST_VIDEO}.mp4"
 
 # Conversion failed, exiting
 if [ $? -ne 0 ]; then
